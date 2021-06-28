@@ -1,0 +1,9 @@
+*.pyc
+*.mo
+env/
+venv/
+.postgres_local_data/
+.pytest_cache
+.coverage
+.cache
+
