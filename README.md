@@ -15,7 +15,7 @@ APIs:
 
 http://127.0.0.1:8000/api/users/
 
-http://127.0.0.1:8000/api/users/<id>/analytics/
+http://127.0.0.1:8000/api/users/---PASTE USER ID---/analytics/
 
 http://127.0.0.1:8000/api/posts/
   
