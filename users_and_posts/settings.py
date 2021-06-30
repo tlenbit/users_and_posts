@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'users_and_posts.middleware.LastUserActivityMiddleware',
 ]
 
 ROOT_URLCONF = 'users_and_posts.urls'
@@ -141,3 +142,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 AUTH_USER_MODEL = 'users.User'
+
+SIMPLE_JWT = {
+    'UPDATE_LAST_LOGIN': True
+}

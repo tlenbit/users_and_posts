@@ -8,10 +8,14 @@ from rest_framework_simplejwt.views import (
 )
 
 from users.views import UserViewSet
+from posts.views import PostViewSet
+from posts.views import LikeViewSet
 
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
+router.register(r'posts', PostViewSet)
+router.register(r'likes', LikeViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
