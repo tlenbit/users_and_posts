@@ -1,9 +1,9 @@
 import asyncio
 
-from posts import test_create_likes
+from likes import test_create_likes
 from posts import test_create_posts
 from users import test_create_users
-from users import test_login_users
+from login import test_login_users
 
 
 async def main():
